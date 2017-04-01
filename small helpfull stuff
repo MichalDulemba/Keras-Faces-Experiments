@@ -1,5 +1,13 @@
 This is a file with my small "solutions" for keras neural networks
 
+--------------------------------------------------------------------------------------------------------
 ImageDataGenerator
 data_format: One of {"channels_first", "channels_last"}. 
 - should fix issue with color files that have formax (x,y,3) and networks expect (3,x,y)
+
+--------------------------------------------------------------------------------------------------------
+UserWarning: Epoch comprised more than samples_per_epoch samples, which might affect learning results.
+Set samples_per_epoch correctly to avoid this warning.
+
+Number of samples should be divisible by batch size
+https://github.com/fchollet/keras/issues/5193
